@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <nav class="bg-[#181818] px-8 py-2 flex items-center justify-between sticky top-0 z-50">
-    <div class="flex items-center gap-6">
+  <nav class="bg-[#181818] px-4 md:px-8 py-2 flex flex-wrap items-center justify-between sticky top-0 z-50">
+    <div class="flex flex-wrap items-center gap-3 md:gap-6">
       <a href="https://www.riotgames.com/en/" class="relative text-white font-semibold transition hover:text-[#ff4655] 
       after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] 
       after:bg-[#ff4655] after:transition-all after:duration-300 hover:after:w-full"><img
@@ -100,7 +100,7 @@
       after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] 
       after:bg-[#ff4655] after:transition-all after:duration-300 hover:after:w-full">CHAMPIONS OF CHAMPIONS</a>
     </div>
-    <div class="flex items-center gap-3">
+    <div class="flex items-center gap-2 md:gap-3 mt-2 md:mt-0">
       <button class="bg-[#232323] rounded-full p-2 flex items-center justify-center hover:bg-[#ff4655] transition">
         <img src="https://img.icons8.com/ios-filled/24/ffffff/search--v1.png" alt="Search" />
       </button>
@@ -115,19 +115,19 @@
 
 
   <section class="ban">
-    <div class="banner relative" style="margin-top:0; margin-bottom:0; padding: top 100px;; padding-bottom:0;">
-      <video autoplay muted loop class="block w-full m-0 p-0">
+    <div class="banner relative m-0 p-0">
+      <video autoplay muted loop class="block w-full h-[220px] md:h-[400px] lg:h-[600px] object-cover m-0 p-0">
         <source src="./IMG_0291.MP4" type="video/mp4">
       </video>
-      <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-2 md:px-4">
         <img
           src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/7b76209193f1bfe190d3ae6ef8728328870be9c3-736x138.png?auto=format&fit=fill&q=80&w=300"
           alt="" class="mb-4 max-w-xs w-full">
-        <h1 class="text-white text-2xl md:text-4xl font-bold mb-4 drop-shadow-lg">VALORANT — A 5v5 tactical shooter
+        <h1 class="text-white text-lg md:text-2xl lg:text-4xl font-bold mb-4 drop-shadow-lg">VALORANT — A 5v5 tactical shooter
           featuring agents with unique abilities</h1>
         <a href="https://playvalorant.com/en-us/platform-selection/" target="_blank">
           <button
-            class="bg-[#ff4655] text-white font-semibold px-8 py-3 border border-white rounded-sm hover:bg-[#e63e4b] transition duration-300">
+            class="bg-[#ff4655] text-white font-semibold px-4 md:px-8 py-2 md:py-3 border border-white rounded-sm hover:bg-[#e63e4b] transition duration-300 text-sm md:text-base">
             PLAY FOR FREE
           </button>
         </a>
@@ -136,12 +136,12 @@
     </div>
   </section>
 
-  <section class="latest bg-[#ecebe8] py-16">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="flex items-center justify-between mb-8">
-        <h1 class="text-[#0f1923] text-4xl md:text-5xl font-extrabold tracking-tight">THE LATEST</h1>
+  <section class="latest bg-[#ecebe8] py-10 md:py-16">
+    <div class="max-w-7xl mx-auto px-2 md:px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
+        <h1 class="text-[#0f1923] text-3xl md:text-5xl font-extrabold tracking-tight">THE LATEST</h1>
         <a href="https://playvalorant.com/en-us/news/"
-          class="text-[#0f1923] font-semibold text-lg flex items-center gap-2 hover:text-[#ff4655] transition">
+          class="text-[#0f1923] font-semibold text-base md:text-lg flex items-center gap-2 hover:text-[#ff4655] transition">
           GO TO NEWS PAGE
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#ff4655]" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
@@ -149,7 +149,7 @@
           </svg>
         </a>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         <div class="flex flex-col cursor-pointer" onclick="window.open('https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-11-04/', '_blank')">
           <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4">
             <img
@@ -193,70 +193,62 @@
   </section>
 
   <section>
-    <div class="season relative">
+    <div class="season relative mt-5 mb-5">
       <img
         src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/f0001d0a770784d6462e8e127904b5e8dd1a280d-3440x1020.jpg?auto=format&fit=fill&q=80&h=640"
         alt="" class="w-full h-auto block" />
-      <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start pl-[12%]">
-        <h1
-          class="text-white text-[4rem] md:text-[6rem] font-extrabold tracking-tight leading-tight mb-4 drop-shadow-lg">
+      <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start pl-4 md:pl-[12%]">
+        <h1 class="text-white text-3xl md:text-[4rem] lg:text-[6rem] font-extrabold tracking-tight leading-tight mb-4 drop-shadow-lg">
           SEASON 2025 // ACT IV
         </h1>
-        <p class="text-white text-lg md:text-2xl font-medium mb-8 drop-shadow-lg">
+        <p class="text-white text-base md:text-lg lg:text-2xl font-medium mb-8 drop-shadow-lg">
           Brave the harsh beauty of Corrode. New ground, classic energy.
         </p>
-        <button
-          class="bg-[#ff4655] text-white text-lg font-bold px-10 py-4 rounded mt-2 shadow-lg hover:bg-[#e13b4b] transition cursor-pointer" onclick="window.open('https://www.youtube.com/watch?v=6U7nx6p0P_M')">
+        <button class="bg-[#ff4655] text-white text-base md:text-lg font-bold px-6 md:px-10 py-2 md:py-4 rounded mt-2 shadow-lg hover:bg-[#e13b4b] transition cursor-pointer" onclick="window.open('https://www.youtube.com/watch?v=6U7nx6p0P_M')">
           WATCH NOW
         </button>
       </div>
     </div>
   </section>
 
-  <section class="py-20 bg-[#ecebe8] relative"
+  <section class="py-10 md:py-20 bg-[#ecebe8] relative"
     style="background: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/c8157d71a4776dd821d05ed6b82d5d875ca03386-5120x1644.png?auto=format&fit=fill&q=80&h=640') center right / cover no-repeat;">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 px-6">
-      <div class="flex-1 flex flex-col items-start bg-[#ecebe8]/80 p-8 rounded-lg">
-        <h1 class="text-[#0f1923] text-6xl md:text-7xl font-extrabold mb-8 tracking-tight">WE ARE VALORANT</h1>
-        <h2 class="text-[#0f1923] text-xl font-bold mb-2">DEFY THE LIMITS</h2>
-        <p class="text-[#0f1923] text-base mb-8 max-w-lg">
-          Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your
-          side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think faster
-          than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as well as
-          Deathmatch and Spike Rush.
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 px-2 md:px-6">
+      <div class="flex-1 flex flex-col items-start bg-[#ecebe8]/80 p-4 md:p-8 rounded-lg">
+        <h1 class="text-[#0f1923] text-3xl md:text-6xl lg:text-7xl font-extrabold mb-4 md:mb-8 tracking-tight">WE ARE VALORANT</h1>
+        <h2 class="text-[#0f1923] text-lg md:text-xl font-bold mb-2">DEFY THE LIMITS</h2>
+        <p class="text-[#0f1923] text-sm md:text-base mb-6 md:mb-8 max-w-lg">
+          Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think faster than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush.
         </p>
-        <button
-          class="bg-[#ff4655] text-white font-bold px-10 py-4 rounded mt-2 shadow-lg hover:bg-[#e13b4b] transition cursor-pointer" onclick="window.open('https://playvalorant.com/en-us/news/announcements/beginners-guide/')">
+        <button class="bg-[#ff4655] text-white font-bold px-6 md:px-10 py-2 md:py-4 rounded mt-2 shadow-lg hover:bg-[#e13b4b] transition cursor-pointer" onclick="window.open('https://playvalorant.com/en-us/news/announcements/beginners-guide/')">
           LEARN THE GAME
         </button>
       </div>
-      <div class="flex-1 flex justify-end">
-        <video class=" object-cover" autoplay muted loop>
-          <source
-            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/f6ccf20dfe3f6a24ea9216bb8afaaa66740c715d.mp4"
+      <div class="flex-1 flex justify-end w-full">
+        <video class="rounded-lg shadow-lg w-full md:w-[700px] h-[200px] md:h-[400px] object-cover" autoplay muted loop>
+          <source src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/f6ccf20dfe3f6a24ea9216bb8afaaa66740c715d.mp4"
             type="video/mp4">
         </video>
       </div>
     </div>
   </section>
 
-  <section class="agents py-20 relative overflow-hidden"
+  <section class="agents py-10 md:py-20 relative overflow-hidden"
     style="background: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/b9f3efa9355803cc44e4c59d3f4437cab192bec3-5120x1616.png?auto=format&fit=fill&q=80&h=816') center center / cover no-repeat, #ff4655;">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-6">
-      <div class="flex-1 flex justify-center">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 px-2 md:px-6">
+      <div class="flex-1 flex justify-center mb-6 md:mb-0">
         <img
           src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/1d62a3751be9d7abfce84da8ca89be7d79f07fed-1232x1232.png?auto=format&fit=fill&q=80&w=720"
-          alt="Agent 1" class="h-[500px] md:h-[600px] object-contain inline-block" />
+          alt="Agent 1" class="h-[300px] md:h-[500px] lg:h-[600px] object-contain inline-block" />
       </div>
-      <div class="flex-1 flex flex-col items-start md:items-start text-white">
-        <h1 class="text-white text-6xl md:text-7xl font-extrabold mb-6 tracking-tight">YOUR AGENTS</h1>
-        <h2 class="text-white text-xl font-bold mb-2">CREATIVITY IS YOUR GREATEST WEAPON.</h2>
-        <p class="text-white text-base mb-8 max-w-lg">
-          More than guns and bullets, you'll choose an Agent armed with adaptive, swift, and lethal abilities that
-          create opportunities to let your gunplay shine.<br>
+      <div class="flex-1 flex flex-col items-start text-white">
+        <h1 class="text-white text-3xl md:text-6xl lg:text-7xl font-extrabold mb-4 md:mb-6 tracking-tight">YOUR AGENTS</h1>
+        <h2 class="text-white text-lg md:text-xl font-bold mb-2">CREATIVITY IS YOUR GREATEST WEAPON.</h2>
+        <p class="text-white text-sm md:text-base mb-6 md:mb-8 max-w-lg">
+          More than guns and bullets, you'll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine.<br>
           No two Agents play alike, just as no two highlight reels will look the same.
         </p>
-        <button class="bg-black text-white font-bold px-10 py-4 rounded mt-2 shadow-lg hover:bg-[#232323] transition cursor-pointer" onclick="window.open('https://playvalorant.com/en-us/agents/', '_blank')">
+        <button class="bg-black text-white font-bold px-6 md:px-10 py-2 md:py-4 rounded mt-2 shadow-lg hover:bg-[#232323] transition cursor-pointer" onclick="window.open('https://playvalorant.com/en-us/agents/', '_blank')">
           VIEW ALL AGENTS
         </button>
       </div>
@@ -269,26 +261,24 @@
     </div>
   </section>
 
-  <section class="map py-20 relative overflow-hidden"
+  <section class="map py-10 md:py-20 relative overflow-hidden"
     style="background: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/3828b05489971b4715f673bc0e2db81f6c7afac7-5120x1616.png?auto=format&fit=fill&q=80&h=816') center center / cover no-repeat, #f7f5f2;">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-6">
-      <div class="flex-1 flex flex-col items-start md:items-start">
-        <h1 class="text-[#0f1923] text-6xl md:text-7xl font-extrabold mb-6 tracking-tight">YOUR MAPS</h1>
-        <h2 class="text-[#0f1923] text-xl font-bold mb-2">FIGHT AROUND THE WORLD</h2>
-        <p class="text-[#0f1923] text-base mb-8 max-w-lg">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 px-2 md:px-6">
+      <div class="flex-1 flex flex-col items-start">
+        <h1 class="text-[#0f1923] text-3xl md:text-6xl lg:text-7xl font-extrabold mb-4 md:mb-6 tracking-tight">YOUR MAPS</h1>
+        <h2 class="text-[#0f1923] text-lg md:text-xl font-bold mb-2">FIGHT AROUND THE WORLD</h2>
+        <p class="text-[#0f1923] text-sm md:text-base mb-6 md:mb-8 max-w-lg">
           Each map is a playground to showcase your creative thinking.<br>
-          Purpose-built for team strategies, spectacular plays, and clutch moments. Make the play others will imitate
-          for years to come.
+          Purpose-built for team strategies, spectacular plays, and clutch moments. Make the play others will imitate for years to come.
         </p>
-        <button
-          class="bg-[#ff4655] text-white font-bold px-10 py-4 rounded mt-2 shadow-lg hover:bg-[#e13b4b] transition cursor-pointer" onclick="window.open('https://playvalorant.com/en-us/maps/', '_blank')">
+        <button class="bg-[#ff4655] text-white font-bold px-6 md:px-10 py-2 md:py-4 rounded mt-2 shadow-lg hover:bg-[#e13b4b] transition cursor-pointer" onclick="window.open('https://playvalorant.com/en-us/maps/', '_blank')">
           VIEW ALL MAPS
         </button>
       </div>
-      <div class="flex-1 flex justify-end">
+      <div class="flex-1 flex justify-end w-full">
         <img
           src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/65c45804e00ee97977b6eef06da370543968d161-1232x1232.png?auto=format&fit=fill&q=80&w=720"
-          alt="Valorant Map" class="rounded-lg shadow-lg w-[600px] h-[400px] object-cover" />
+          alt="Valorant Map" class="rounded-lg shadow-lg w-full md:w-[600px] h-[200px] md:h-[400px] object-cover" />
       </div>
     </div>
     <div class="absolute inset-0 pointer-events-none">
@@ -303,12 +293,12 @@
   </section>
   <footer class="bg-[#232323] pt-6 pb-12">
     <div class="text-center text-white font-semibold tracking-wide py-4 border-b border-[#2c2c2c]">
-      <button class="rounded-lg hover:bg-[#3B3B3B] cursor-pointer ps-5 pe-5" onclick="window.open('https://play.google.com/store/apps/details?id=com.riotgames.mobile.leagueconnect&referrer=adjust_reftag%3DcawYVh3Pyt9pe%26utm_source%3DWeb%26utm_campaign%3DWeb_VAL_RiotMobile_StoreLink_Multi&pli=1', '_blank')">
+      <button class="rounded-lg hover:bg-[#3B3B3B] cursor-pointer px-4 md:px-5" onclick="window.open('https://play.google.com/store/apps/details?id=com.riotgames.mobile.leagueconnect&referrer=adjust_reftag%3DcawYVh3Pyt9pe%26utm_source%3DWeb%26utm_campaign%3DWeb_VAL_RiotMobile_StoreLink_Multi&pli=1', '_blank')">
         DOWNLOAD RIOT MOBILE COMPANION APP
       </button>
     </div>
-    <div class="bg-[#181818] py-10 flex flex-col items-center">
-      <div class="flex gap-4 mb-8">
+    <div class="bg-[#181818] py-6 md:py-10 flex flex-col items-center">
+      <div class="flex flex-wrap gap-2 md:gap-4 mb-8 justify-center">
         <a href="https://x.com/valorant" class="bg-[#232323] rounded-full p-2 hover:bg-[#ff4655] transition">
           <img src="https://img.icons8.com/ios-filled/32/ffffff/x.png" alt="X" />
         </a>
@@ -328,21 +318,20 @@
           <img src="https://img.icons8.com/ios-filled/32/ffffff/discord-logo.png" alt="Discord" />
         </a>
       </div>
-      <img src="./riotgameslogo-removebg-preview.png" alt="Riot Games" class="mb-4 h-10 opacity-70 hover:opacity-100 transition cursor-pointer" onclick="window.open('https://www.riotgames.com/en', '_blank')  " />
-      <p class="text-gray-400 text-sm max-w-2xl mx-auto mb-6">
-        © 2020-2025 Riot Games, Inc. RIOT GAMES, VALORANT and any associated logos are trademarks, service marks, and/or
-        registered trademarks of Riot Games, Inc.
+      <img src="./riotgameslogo-removebg-preview.png" alt="Riot Games" class="mb-4 h-8 md:h-10 opacity-70 hover:opacity-100 transition cursor-pointer" onclick="window.open('https://www.riotgames.com/en', '_blank')  " />
+      <p class="text-gray-400 text-xs md:text-sm max-w-2xl mx-auto mb-6 text-center">
+        © 2020-2025 Riot Games, Inc. RIOT GAMES, VALORANT and any associated logos are trademarks, service marks, and/or registered trademarks of Riot Games, Inc.
       </p>
-      <div class="flex gap-8 justify-center mb-8">
+      <div class="flex flex-wrap gap-4 md:gap-8 justify-center mb-8">
         <a href="https://www.riotgames.com/en/privacy-notice" class="text-white font-semibold text-sm hover:bg-[#3B3B3B] ps-3 pe-3 rounded">PRIVACY NOTICE</a>
         <a href="https://www.riotgames.com/en/terms-of-service" class="text-white font-semibold text-sm hover:bg-[#3B3B3B] ps-3 pe-3 rounded">TERMS OF SERVICE</a>
       </div>
       <div class="flex justify-center">
-        <div class="bg-[#232323] rounded-lg p-4 flex items-center gap-4">
+        <div class="bg-[#232323] rounded-lg p-2 md:p-4 flex items-center gap-2 md:gap-4">
           <img
             src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar/7e684cc4765a7d059f9018e16717472d7082dc37-65x97.png?&h=100&fit=max"
-            alt="ESRB Teen" class=" w-16" />
-          <ul class="text-white text-sm font-medium space-y-1">
+            alt="ESRB Teen" class="w-10 md:w-16" />
+          <ul class="text-white text-xs md:text-sm font-medium space-y-1">
             <li>Blood</li>
             <li>Language</li>
             <li>Violence</li>
