@@ -7,6 +7,11 @@
   <title>Valorant</title>
   <link rel="icon" type="image/x-icon" href="valorant.png">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -107,11 +112,42 @@
       <button class="bg-[#232323] rounded-full p-2 flex items-center justify-center">
         <img src="https://img.icons8.com/ios-filled/24/ffffff/globe--v1.png" alt="Globe" />
       </button>
-      <button class="bg-[#ff4655] text-white font-bold px-6 py-2 rounded-lg shadow hover:bg-[#e13b4b] transition">
+      <button class="bg-[#ff4655] text-white font-bold px-6 py-2 rounded-lg shadow hover:bg-[#e13b4b] transition"
+        data-bs-toggle="modal" data-bs-target="#playNowModal">
         PLAY NOW
       </button>
     </div>
   </nav>
+
+  <!-- 🔹 Modal -->
+  <div class="modal fade" id="playNowModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content text-center text-white p-4 bg-dark">
+        <!-- Close -->
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+
+        <!-- Title -->
+        <h2 class="fw-bold my-3">\ GET SET UP TO PLAY \</h2>
+
+        <!-- Options -->
+        <div class="d-flex justify-content-around my-4 ">
+          <div>
+            <p class="small">I don’t have a Riot Account</p>
+            <button class="btn btn-light fw-semibold"
+              onclick="window.open('https://authenticate.riotgames.com/?client_id=prod-xsso-playvalorant&code_challenge=B9RgDUXydeyhKIKZYQmHGNM6H7NwDSds8g5cRM9UP5Y&locale=en_US&method=riot_identity_signup&platform=web&redirect_uri=https%3A%2F%2Fauth.riotgames.com%2Fauthorize%3Fclient_id%3Dprod-xsso-playvalorant%26code_challenge%3DB9RgDUXydeyhKIKZYQmHGNM6H7NwDSds8g5cRM9UP5Y%26code_challenge_method%3DS256%26locale%3Den_US%26prompt%3Dsignup%26redirect_uri%3Dhttps%3A%2F%2Fxsso.playvalorant.com%2Fredirect%26response_type%3Dcode%26scope%3Dopenid%2520account%2520email%2520offline_access%26show_region%3Dtrue%26state%3Db2043c947ba38760322b152605%26uri%3Dhttps%3A%2F%2Fplayvalorant.com%2Fen-gb%2Fplatform-selection%2F&show_region=true', '_blank')">CREATE
+              ONE</button>
+          </div>
+          <div>
+            <p class="small">I have a Riot Account</p>
+            <button class="btn btn-danger fw-semibold"
+              onclick="window.open('https://authenticate.riotgames.com/?client_id=prod-xsso-playvalorant&code_challenge=FMkPPHx5VhlFhCVW6UINeKyvvxqx9NqEp6O60G1sZtw&locale=en_US&method=riot_identity&platform=web&redirect_uri=https%3A%2F%2Fauth.riotgames.com%2Fauthorize%3Fclient_id%3Dprod-xsso-playvalorant%26code_challenge%3DFMkPPHx5VhlFhCVW6UINeKyvvxqx9NqEp6O60G1sZtw%26code_challenge_method%3DS256%26locale%3Den_US%26redirect_uri%3Dhttps%253A%252F%252Fxsso.playvalorant.com%252Fredirect%26response_type%3Dcode%26scope%3Dopenid%2520account%2520email%2520offline_access%26state%3Dce164110ef362307c7fda02846%26uri%3Dhttps%253A%252F%252Fplayvalorant.com%252Fen-gb%252Fplatform-selection%252F&security_profile=low', '_blank')">SIGN
+              IN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <section class="ban">
@@ -123,7 +159,8 @@
         <img
           src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/7b76209193f1bfe190d3ae6ef8728328870be9c3-736x138.png?auto=format&fit=fill&q=80&w=300"
           alt="" class="mb-4 max-w-xs w-full">
-        <h1 class="text-white text-lg md:text-2xl lg:text-4xl font-bold mb-4 drop-shadow-lg">VALORANT — A 5v5 tactical shooter
+        <h1 class="text-white text-lg md:text-2xl lg:text-4xl font-bold mb-4 drop-shadow-lg">VALORANT — A 5v5 tactical
+          shooter
           featuring agents with unique abilities</h1>
         <a href="https://playvalorant.com/en-us/platform-selection/" target="_blank">
           <button
@@ -150,7 +187,8 @@
         </a>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-        <div class="flex flex-col cursor-pointer" onclick="window.open('https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-11-04/', '_blank')">
+        <div class="flex flex-col cursor-pointer"
+          onclick="window.open('https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-11-04/', '_blank')">
           <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4">
             <img
               src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/b547299557c8f378e422628a884fe39455675899-1920x1080.jpg?auto=format&fit=crop&q=80&h=270&w=480&crop=center"
@@ -162,7 +200,8 @@
           <h2 class="text-[#0f1923] text-xl font-bold mb-2">VALORANT Patch Notes 11.04</h2>
           <p class="text-[#232323] text-base">Sage main rejoices, new map rotation, and some more.</p>
         </div>
-        <div class="flex flex-col cursor-pointer" onclick="window.open('https://www.youtube.com/watch?v=LsdbS7jm33k', '_blank')">
+        <div class="flex flex-col cursor-pointer"
+          onclick="window.open('https://www.youtube.com/watch?v=LsdbS7jm33k', '_blank')">
           <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4">
             <img
               src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/0ac4a90ff6e7325bc6d10f0890e03840dc2a3a74-1920x1080.jpg?auto=format&fit=crop&q=80&h=270&w=480&crop=center"
@@ -173,9 +212,11 @@
             <span class="text-[#232323] font-normal">8/18/2025</span>
           </h4>
           <h2 class="text-[#0f1923] text-xl font-bold mb-2">VALORANT Pros Build VCT Fantasy 5-Stacks</h2>
-          <p class="text-[#232323] text-base">Building a roster is hard, but these <br>VALORANT pros were up to the challenge.</p>
+          <p class="text-[#232323] text-base">Building a roster is hard, but these <br>VALORANT pros were up to the
+            challenge.</p>
         </div>
-        <div class="flex flex-col cursor-pointer" onclick="window.open('https://valorantesports.com/en-US/news/champions-paris-tickets-on-sale-now', '_blank')">
+        <div class="flex flex-col cursor-pointer"
+          onclick="window.open('https://valorantesports.com/en-US/news/champions-paris-tickets-on-sale-now', '_blank')">
           <div class="relative w-full h-56 overflow-hidden rounded-lg mb-4">
             <img
               src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/a7fbdee2c56aacc352c0db259fa7d2dc0f1116d4-1920x1080.jpg?auto=format&fit=crop&q=80&h=270&w=480&crop=center"
@@ -198,13 +239,16 @@
         src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/f0001d0a770784d6462e8e127904b5e8dd1a280d-3440x1020.jpg?auto=format&fit=fill&q=80&h=640"
         alt="" class="w-full h-auto block" />
       <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start pl-4 md:pl-[12%]">
-        <h1 class="text-white text-3xl md:text-[4rem] lg:text-[6rem] font-extrabold tracking-tight leading-tight mb-4 drop-shadow-lg">
+        <h1
+          class="text-white text-3xl md:text-[4rem] lg:text-[6rem] font-extrabold tracking-tight leading-tight mb-4 drop-shadow-lg">
           SEASON 2025 // ACT IV
         </h1>
         <p class="text-white text-base md:text-lg lg:text-2xl font-medium mb-8 drop-shadow-lg">
           Brave the harsh beauty of Corrode. New ground, classic energy.
         </p>
-        <button class="bg-[#ff4655] text-white text-base md:text-lg font-bold px-6 md:px-10 py-2 md:py-4 rounded mt-2 shadow-lg hover:bg-[#e13b4b] transition cursor-pointer" onclick="window.open('https://www.youtube.com/watch?v=6U7nx6p0P_M')">
+        <button
+          class="bg-[#ff4655] text-white text-base md:text-lg font-bold px-6 md:px-10 py-2 md:py-4 rounded mt-2 shadow-lg hover:bg-[#e13b4b] transition cursor-pointer"
+          onclick="window.open('https://www.youtube.com/watch?v=6U7nx6p0P_M')">
           WATCH NOW
         </button>
       </div>
@@ -215,18 +259,25 @@
     style="background: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/c8157d71a4776dd821d05ed6b82d5d875ca03386-5120x1644.png?auto=format&fit=fill&q=80&h=640') center right / cover no-repeat;">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 px-2 md:px-6">
       <div class="flex-1 flex flex-col items-start bg-[#ecebe8]/80 p-4 md:p-8 rounded-lg">
-        <h1 class="text-[#0f1923] text-3xl md:text-6xl lg:text-7xl font-extrabold mb-4 md:mb-8 tracking-tight">WE ARE VALORANT</h1>
+        <h1 class="text-[#0f1923] text-3xl md:text-6xl lg:text-7xl font-extrabold mb-4 md:mb-8 tracking-tight">WE ARE
+          VALORANT</h1>
         <h2 class="text-[#0f1923] text-lg md:text-xl font-bold mb-2">DEFY THE LIMITS</h2>
         <p class="text-[#0f1923] text-sm md:text-base mb-6 md:mb-8 max-w-lg">
-          Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think faster than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush.
+          Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your
+          side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think faster
+          than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as well as
+          Deathmatch and Spike Rush.
         </p>
-        <button class="bg-[#ff4655] text-white font-bold px-6 md:px-10 py-2 md:py-4 rounded mt-2 shadow-lg hover:bg-[#e13b4b] transition cursor-pointer" onclick="window.open('https://playvalorant.com/en-us/news/announcements/beginners-guide/')">
+        <button
+          class="bg-[#ff4655] text-white font-bold px-6 md:px-10 py-2 md:py-4 rounded mt-2 shadow-lg hover:bg-[#e13b4b] transition cursor-pointer"
+          onclick="window.open('https://playvalorant.com/en-us/news/announcements/beginners-guide/')">
           LEARN THE GAME
         </button>
       </div>
       <div class="flex-1 flex justify-end w-full">
         <video class="rounded-lg shadow-lg w-full md:w-[700px] h-[200px] md:h-[400px] object-cover" autoplay muted loop>
-          <source src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/f6ccf20dfe3f6a24ea9216bb8afaaa66740c715d.mp4"
+          <source
+            src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/f6ccf20dfe3f6a24ea9216bb8afaaa66740c715d.mp4"
             type="video/mp4">
         </video>
       </div>
@@ -242,13 +293,17 @@
           alt="Agent 1" class="h-[300px] md:h-[500px] lg:h-[600px] object-contain inline-block" />
       </div>
       <div class="flex-1 flex flex-col items-start text-white">
-        <h1 class="text-white text-3xl md:text-6xl lg:text-7xl font-extrabold mb-4 md:mb-6 tracking-tight">YOUR AGENTS</h1>
+        <h1 class="text-white text-3xl md:text-6xl lg:text-7xl font-extrabold mb-4 md:mb-6 tracking-tight">YOUR AGENTS
+        </h1>
         <h2 class="text-white text-lg md:text-xl font-bold mb-2">CREATIVITY IS YOUR GREATEST WEAPON.</h2>
         <p class="text-white text-sm md:text-base mb-6 md:mb-8 max-w-lg">
-          More than guns and bullets, you'll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine.<br>
+          More than guns and bullets, you'll choose an Agent armed with adaptive, swift, and lethal abilities that
+          create opportunities to let your gunplay shine.<br>
           No two Agents play alike, just as no two highlight reels will look the same.
         </p>
-        <button class="bg-black text-white font-bold px-6 md:px-10 py-2 md:py-4 rounded mt-2 shadow-lg hover:bg-[#232323] transition cursor-pointer" onclick="window.open('https://playvalorant.com/en-us/agents/', '_blank')">
+        <button
+          class="bg-black text-white font-bold px-6 md:px-10 py-2 md:py-4 rounded mt-2 shadow-lg hover:bg-[#232323] transition cursor-pointer"
+          onclick="window.open('https://playvalorant.com/en-us/agents/', '_blank')">
           VIEW ALL AGENTS
         </button>
       </div>
@@ -265,13 +320,17 @@
     style="background: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/3828b05489971b4715f673bc0e2db81f6c7afac7-5120x1616.png?auto=format&fit=fill&q=80&h=816') center center / cover no-repeat, #f7f5f2;">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 px-2 md:px-6">
       <div class="flex-1 flex flex-col items-start">
-        <h1 class="text-[#0f1923] text-3xl md:text-6xl lg:text-7xl font-extrabold mb-4 md:mb-6 tracking-tight">YOUR MAPS</h1>
+        <h1 class="text-[#0f1923] text-3xl md:text-6xl lg:text-7xl font-extrabold mb-4 md:mb-6 tracking-tight">YOUR MAPS
+        </h1>
         <h2 class="text-[#0f1923] text-lg md:text-xl font-bold mb-2">FIGHT AROUND THE WORLD</h2>
         <p class="text-[#0f1923] text-sm md:text-base mb-6 md:mb-8 max-w-lg">
           Each map is a playground to showcase your creative thinking.<br>
-          Purpose-built for team strategies, spectacular plays, and clutch moments. Make the play others will imitate for years to come.
+          Purpose-built for team strategies, spectacular plays, and clutch moments. Make the play others will imitate
+          for years to come.
         </p>
-        <button class="bg-[#ff4655] text-white font-bold px-6 md:px-10 py-2 md:py-4 rounded mt-2 shadow-lg hover:bg-[#e13b4b] transition cursor-pointer" onclick="window.open('https://playvalorant.com/en-us/maps/', '_blank')">
+        <button
+          class="bg-[#ff4655] text-white font-bold px-6 md:px-10 py-2 md:py-4 rounded mt-2 shadow-lg hover:bg-[#e13b4b] transition cursor-pointer"
+          onclick="window.open('https://playvalorant.com/en-us/maps/', '_blank')">
           VIEW ALL MAPS
         </button>
       </div>
@@ -293,7 +352,8 @@
   </section>
   <footer class="bg-[#232323] pt-6 pb-12">
     <div class="text-center text-white font-semibold tracking-wide py-4 border-b border-[#2c2c2c]">
-      <button class="rounded-lg hover:bg-[#3B3B3B] cursor-pointer px-4 md:px-5" onclick="window.open('https://play.google.com/store/apps/details?id=com.riotgames.mobile.leagueconnect&referrer=adjust_reftag%3DcawYVh3Pyt9pe%26utm_source%3DWeb%26utm_campaign%3DWeb_VAL_RiotMobile_StoreLink_Multi&pli=1', '_blank')">
+      <button class="rounded-lg hover:bg-[#3B3B3B] cursor-pointer px-4 md:px-5"
+        onclick="window.open('https://play.google.com/store/apps/details?id=com.riotgames.mobile.leagueconnect&referrer=adjust_reftag%3DcawYVh3Pyt9pe%26utm_source%3DWeb%26utm_campaign%3DWeb_VAL_RiotMobile_StoreLink_Multi&pli=1', '_blank')">
         DOWNLOAD RIOT MOBILE COMPANION APP
       </button>
     </div>
@@ -305,26 +365,34 @@
         <a href="https://www.youtube.com/@valorant" class="bg-[#232323] rounded-full p-2 hover:bg-[#ff4655] transition">
           <img src="https://img.icons8.com/ios-filled/32/ffffff/youtube-play.png" alt="YouTube" />
         </a>
-        <a href="https://www.instagram.com/valorant/" class="bg-[#232323] rounded-full p-2 hover:bg-[#ff4655] transition">
+        <a href="https://www.instagram.com/valorant/"
+          class="bg-[#232323] rounded-full p-2 hover:bg-[#ff4655] transition">
           <img src="https://img.icons8.com/ios-filled/32/ffffff/instagram-new.png" alt="Instagram" />
         </a>
         <a href="https://www.tiktok.com/notfound" class="bg-[#232323] rounded-full p-2 hover:bg-[#ff4655] transition">
           <img src="https://img.icons8.com/ios-filled/32/ffffff/tiktok.png" alt="TikTok" />
         </a>
-        <a href="https://www.facebook.com/VALORANT#" class="bg-[#232323] rounded-full p-2 hover:bg-[#ff4655] transition">
+        <a href="https://www.facebook.com/VALORANT#"
+          class="bg-[#232323] rounded-full p-2 hover:bg-[#ff4655] transition">
           <img src="https://img.icons8.com/ios-filled/32/ffffff/facebook-new.png" alt="Facebook" />
         </a>
-        <a href="https://discord.com/invite/valorant" class="bg-[#232323] rounded-full p-2 hover:bg-[#ff4655] transition">
+        <a href="https://discord.com/invite/valorant"
+          class="bg-[#232323] rounded-full p-2 hover:bg-[#ff4655] transition">
           <img src="https://img.icons8.com/ios-filled/32/ffffff/discord-logo.png" alt="Discord" />
         </a>
       </div>
-      <img src="./riotgameslogo-removebg-preview.png" alt="Riot Games" class="mb-4 h-8 md:h-10 opacity-70 hover:opacity-100 transition cursor-pointer" onclick="window.open('https://www.riotgames.com/en', '_blank')  " />
+      <img src="./riotgameslogo-removebg-preview.png" alt="Riot Games"
+        class="mb-4 h-8 md:h-10 opacity-70 hover:opacity-100 transition cursor-pointer"
+        onclick="window.open('https://www.riotgames.com/en', '_blank')  " />
       <p class="text-gray-400 text-xs md:text-sm max-w-2xl mx-auto mb-6 text-center">
-        © 2020-2025 Riot Games, Inc. RIOT GAMES, VALORANT and any associated logos are trademarks, service marks, and/or registered trademarks of Riot Games, Inc.
+        © 2020-2025 Riot Games, Inc. RIOT GAMES, VALORANT and any associated logos are trademarks, service marks, and/or
+        registered trademarks of Riot Games, Inc.
       </p>
       <div class="flex flex-wrap gap-4 md:gap-8 justify-center mb-8">
-        <a href="https://www.riotgames.com/en/privacy-notice" class="text-white font-semibold text-sm hover:bg-[#3B3B3B] ps-3 pe-3 rounded">PRIVACY NOTICE</a>
-        <a href="https://www.riotgames.com/en/terms-of-service" class="text-white font-semibold text-sm hover:bg-[#3B3B3B] ps-3 pe-3 rounded">TERMS OF SERVICE</a>
+        <a href="https://www.riotgames.com/en/privacy-notice"
+          class="text-white font-semibold text-sm hover:bg-[#3B3B3B] ps-3 pe-3 rounded">PRIVACY NOTICE</a>
+        <a href="https://www.riotgames.com/en/terms-of-service"
+          class="text-white font-semibold text-sm hover:bg-[#3B3B3B] ps-3 pe-3 rounded">TERMS OF SERVICE</a>
       </div>
       <div class="flex justify-center">
         <div class="bg-[#232323] rounded-lg p-2 md:p-4 flex items-center gap-2 md:gap-4">
